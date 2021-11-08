@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos (Admin)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="images/Logo.jpg" alt="Logo"></a>
+        <div class="btn_menu"><a>MENU</a></div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="contacto.html">Contacto</a> </li>
+                <li><a href="pedidos.html">Pedidos (Admin)</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>PEDIDOS (ADMIN)</h1>
+
+    <h3>El correcto funcionamiento de esta página, depende del JSON server de prueba configurado.</h3>
+    <form id="form_pedido">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required>
+        <input type="text" name="direccion" id="direccion" placeholder="Dirección" required>
+        <select name="select" id="select" required>
+            <option value="Malbec Ginar Ballester">Malbec Ginar Ballester</option>
+            <option value="Malbec Carmelo Patti">Malbec Carmelo Patti</option>
+            <option value="Malbec Sombrero">Malbec Sombrero</option>
+            <option value="Malbec Rutini">Malbec Rutini</option>
+            <option value="Espumante Dada">Espumante Dada</option>
+            <option value="Espumante Navarro Correa">Espumante Navarro Correa</option>
+            <option value="Espumante Vilarnau">Espumante Vilarnau</option>
+            <option value="Espumante Zuccardi">Espumante Zuccardi</option>
+            <option value="Cerveza Antares Stout">Cerveza Antares Stout</option>
+            <option value="Cerveza Antares Honey">Cerveza Antares Honey</option>
+            <option value="Cerveza Antares Scotch">Cerveza Antares Scotch</option>
+            <option value="Cerveza Antares Kolsch">Cerveza Antares Kolsch</option>
+        </select>
+        <input type="number" name="cantidad" id="cantidad" placeholder="Cantidad" value="1" required>
+        <input type="text" name="codigodescuento" id="codigodescuento" placeholder="Codigo de descuento" maxlength="4"
+            minlength="4">
+        <button id="btn_agregar">Agregar</button>
+    </form>
+    <div id="botonesEditar">
+    </div>
+    <div class="tablaPedidos">
+        <div class="flex">
+            <form id="form_filtro">
+                <input type="text" name="filtro" id="filtro" placeholder="Buscar">
+                <button id="btn_filtrar">Filtrar</button>
+            </form>
+            <button id="btn_desfiltrar">Quitar filtro</button>
+        </div>
+        <table id="tabladinamica">
+            <thead>
+                <tr>
+                    <th>Nombre y Apellido</th>
+                    <th>Dirección de entrega</th>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Codigo de descuento</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="avisodescuentos">
+            <h3 class="cantidadentre2y5">Se aplicará 5% de descuento llevando entre 2 y 5 productos iguales.</h3>
+            <h3 class="cantidadmayora5">Se aplicará 10% de descuento llevando 6 o mas productos iguales</h3>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="listaslinks">
+            <div>
+                <h3>Seguinos</h3>
+                <ul>
+                    <li>Facebook: Vinoteca Bohemian</li>
+                    <li>Instagram: @VinotecaBohemian</li>
+                </ul>
+            </div>
+            <div>
+                <h3><a href="productos.html">Productos</a></h3>
+                <ul>
+                    <li><a href="productos.html">Vinos</a></li>
+                    <li><a href="productos.html">Espumantes</a></li>
+                    <li><a href="productos.html">Cervezas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3><a href="sucursales.html">Sucursales</a></h3>
+                <ul>
+                    <li><a href="sucursales.html">Córdoba</a></li>
+                    <li><a href="sucursales.html">Barcelona</a></li>
+                    <li><a href="sucursales.html">Roma</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3> <a href="contacto.html">Contacto</a> </h3>
+            </div>
+            <div>
+                <h3>Pedidos</h3>
+            </div>
+        </div>
+        <p class="copyright">© Todos los derechos reservados 2021. Vinoteca Bohemian. Beber con moderación.
+            Prohibida la venta de alcohol a menores de 18 años.</p>
+    </footer>
+
+    <script type="text/javascript" src="js/tabladinamica.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+</body>
+
+</html>
