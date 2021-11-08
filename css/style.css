@@ -1,0 +1,395 @@
+body, button{
+    font-family: 'Staatliches', cursiva;
+}
+
+h1, h2, h3, p, footer li, .copyright, td{
+    text-align: center;
+}
+
+h1 {
+    font-size: 250%;
+    color: #685866;
+}
+
+h2{
+    font-size: 180%;
+}
+
+p, li{
+    font-size: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+form input{
+    height: 20px;
+    max-width: 600px;
+}
+
+button{
+    font-size: 100%;
+    height: 30px;
+}
+
+th {
+    background-color: grey;
+    color: white;
+}
+
+table, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tablacervezas {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.tablacervezas table{
+    width: 70%;
+}
+
+#form_pedido input, select, #form_pedido button{
+    margin: 5px auto;
+}
+
+figure img{
+    margin: 10px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* ENCABEZADO DE PAGINAS */
+
+nav a{
+    font-size: 150%;
+}
+
+.btn_menu, ul.navigation{
+    text-align: end;
+}
+
+.btn_menu a{
+    font-size: 120%;
+}
+
+.btn_menu{
+    background: #FF8100;
+}
+
+.navigation {
+    display: flex;
+    background: grey;
+    border-bottom: 5px solid grey;
+    padding-left: 0px;
+    justify-content: center;
+    margin: 0px;
+}
+
+ul.navigation {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul.navigation.mostrar { /*se usa a través de JS para mostrar el menú*/
+    display: flex;
+}
+
+
+
+/* PIE DE PAGINAS */
+footer{
+    margin-top: 50px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0px;
+}
+
+footer h3{
+    border-top: 1px solid black;
+}
+
+
+
+/* PAGINA PRODUCTOS */
+
+#logo, .sucursales img, .listasucursales img, figure img, .imageproducto{
+    display: block;
+    max-width: 100%;
+    max-height: 300px;
+    margin-right : auto;
+    margin-left : auto;
+    height: auto;
+}
+
+.imageproducto {
+    max-height: 220px;
+}
+
+
+
+/* PAGINA CONTACTO */
+
+.containermensaje{
+    display: flex;
+    max-width: 600px;
+    min-height: 300px;
+}
+
+.containermensaje textarea{
+    resize: none;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* PAGINA PEDIDOS */
+
+#form_pedido{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cantidadentre2y5{
+    background-color: rgb(252, 248, 58);
+}
+
+.cantidadmayora5{
+    background-color: rgb(107, 206, 61);
+}
+
+.tablaPedidos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#botonesEditar{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 600px)
+{
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    p, li{
+        font-size: 16px;
+    }
+
+
+
+/* ENCABEZADO DE PAGINAS */
+
+    #logo{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .btn_menu{
+        display: none;
+    }
+
+    .navigation {
+        background: #FF8100;
+    }
+
+    ul.navigation{
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav li{
+        list-style: none;
+        font-size: 17px;
+        color: white;
+        text-transform: uppercase;
+        margin: 0px 10px;
+        padding: 15px;
+    }
+
+    nav li:hover {
+        background: grey;
+    }
+
+    .columnasinicio h2{
+        margin: 0px;
+    }
+
+    .containerinicio {
+        display: flex;
+        border-bottom: 1px solid black ;
+    }
+
+    .containerinicio article{
+        margin: 13px;
+    }
+
+    figure{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    section{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    /* PIE DE PAGINAS */
+
+    footer{
+        border-top: 1px solid black;
+    }
+
+    .listaslinks {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px;
+    }
+
+    footer h3{
+        border-top: none;
+        margin-top: 8px;
+        margin-bottom: 5px;
+    }
+
+    footer ul{
+        margin: 0px;
+    }
+
+
+
+    /* PAGINA PRODUCTOS */
+
+    article.producto {
+        width: 25%;
+    }
+
+    .imageproducto {
+        max-height: none;
+        height: 300px;
+    }
+
+    .producto p{
+        margin: 5px 30px 13px 13px ;
+        border-top: 1px solid black;
+        padding-top: 5px;
+    }
+
+    .producto h3 {
+        margin: 0px;
+    }
+
+    th {
+        background-color: grey;
+        color: white;
+        }
+
+    table, td, tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+        }
+
+    table{
+        width: 70%;
+        }
+
+    .tablacervezas {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    td {
+        text-align: center;
+    }
+
+
+
+    /* PAGINAS SUCURSALES */
+    .containersucursales {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    .sucursales {
+        width: 33.33%;
+    }
+
+    .sucursales img{
+        margin: auto;
+        width: 400px;
+        height: 230px;
+    }
+
+    .proximassucursales {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .listasucursales {
+        margin-right: 80px;
+        margin-bottom: 50px;
+    }
+
+
+
+    /* PAGINA CONTACTO */
+
+    .formulariocontacto{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px auto 20px auto;
+    }
+
+    .containermensaje{
+        display: flex;
+        width: 800px;
+    }
+
+    .mensaje {
+        height: 200px;
+        width: 700px;
+    }
+
+    .formulariocontacto p {
+        text-align: start;
+    }
+
+}
