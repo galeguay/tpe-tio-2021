@@ -56,6 +56,9 @@ table, td, tr {
 
 #form_pedido input, select, #form_pedido button{
     margin: 5px auto;
+    padding: 5px;
+    color:black;
+
 }
 
 figure img{
@@ -166,11 +169,11 @@ footer h3{
 }
 
 .cantidadentre2y5{
-    background-color: rgb(252, 248, 58);
+    background-color: red;
 }
 
 .cantidadmayora5{
-    background-color: rgb(107, 206, 61);
+    background-color: blue;
 }
 
 .tablaPedidos{
