@@ -379,11 +379,14 @@ footer h3{
         display: flex;
         justify-content: center;
         margin-top: 30px auto 20px auto;
+        padding-top: 10px;
+        background: #FF8100;
     }
 
     .containermensaje{
         display: flex;
         width: 800px;
+        margin: 30px auto 30px auto;
     }
 
     .mensaje {
