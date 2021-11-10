@@ -37,12 +37,12 @@ button{
 
 th {
     background-color: rgb(24, 119, 197);
-    color: rgb(39, 127, 161);
+    color: rgb(10, 10, 10);
 }
 
 
 table, td, tr {
-    border: 1px solid black;
+    border: 3px solid black;
     border-collapse: collapse;
 }
 
